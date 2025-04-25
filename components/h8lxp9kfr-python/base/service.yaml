@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: h8lxp9kfr-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: h8lxp9kfr-python 
+  name: h8lxp9kfr-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: h8lxp9kfr-python 
